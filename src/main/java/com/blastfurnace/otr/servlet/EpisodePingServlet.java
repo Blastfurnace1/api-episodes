@@ -4,10 +4,10 @@ import javax.servlet.annotation.WebServlet;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.blastfurnace.otr.api.response.GenericResponse;
 import com.blastfurnace.otr.data.episode.service.model.EpisodeDataWrapper;
 import com.blastfurnace.otr.episode.service.EpisodeDataService;
-import com.blastfurnace.otr.service.response.GenericResponse;
-
+import com.blastfurnace.otr.util.servlet.PingServlet;
 @WebServlet("/ping")
 public class EpisodePingServlet extends PingServlet {
 	

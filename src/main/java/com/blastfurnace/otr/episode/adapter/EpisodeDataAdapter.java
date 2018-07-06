@@ -3,9 +3,9 @@ package com.blastfurnace.otr.episode.adapter;
 import java.util.List;
 import java.util.Map;
 
+import com.blastfurnace.otr.api.response.GenericResponse;
 import com.blastfurnace.otr.data.episode.service.model.EpisodeDataWrapper;
-import com.blastfurnace.otr.rest.request.QueryData;
-import com.blastfurnace.otr.service.response.GenericResponse;
+import com.blastfurnace.otr.service.request.QueryData;
 
 public interface EpisodeDataAdapter {
 
