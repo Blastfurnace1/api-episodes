@@ -18,23 +18,15 @@ package com.blastfurnace.otr.epsiode;
 import java.util.Map;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.context.junit4.SpringRunner;
 
+import com.blastfurnace.otr.AppConfigTest;
 import com.blastfurnace.otr.data.episode.service.model.EpisodeDataWrapper;
-import com.blastfurnace.otr.utils.UtilitiesApplicationTest;
 
 import static org.assertj.core.api.BDDAssertions.then;
 import static org.junit.Assert.assertTrue;
@@ -44,7 +36,7 @@ import static org.junit.Assert.assertTrue;
  *
  * @author Jim Blackson
  */
-public class EpisodeAPIRestTests extends UtilitiesApplicationTest {
+public class EpisodeAPIRestTests extends AppConfigTest {
 	
 	private static final Logger log = LoggerFactory.getLogger(EpisodeAPIRestTests.class); 
 	
