@@ -41,7 +41,7 @@ public class EpisodeAPIRestTests extends AppConfigTest {
 	private static final Logger log = LoggerFactory.getLogger(EpisodeAPIRestTests.class); 
 	
 	@Test
-	public void WhenSendingGetRequestToControllerReponseObject() throws Exception {
+	public void shouldPerformEpisodeAPIRestTests() throws Exception {
 		log.info("Episode API Rest Tests - Start");
 		@SuppressWarnings("rawtypes")
 		ResponseEntity<Map> entity = this.getTestRestTemplate().getForEntity(
